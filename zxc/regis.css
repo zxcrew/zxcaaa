@@ -1,0 +1,119 @@
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Nunito', 'sans-serif';
+    background: #1D1B26;
+    margin-top:100px;
+
+}
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(6,183,235,1) 0%, rgba(0,72,250,1) 100%, rgba(255,0,65,1) 100%, rgba(147,7,82,1) 100%, rgba(121,9,86,1) 100%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    background: rgba(255, green, blue, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+    margin-bottom: 30px;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+    form {
+        max-width: 580px;
+    }
+}
+
+.ryu{
+    font-size:24px;
+
+
+}
+.sliding-button {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(90deg, rgba(36,0,36,1) 0%, rgba(121,9,86,1) 37%, rgba(255,0,65,1) 100%);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+    background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a{
+
+    text-decoration: none;
+}
